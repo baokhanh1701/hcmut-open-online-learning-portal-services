@@ -30,19 +30,7 @@ async function main() {
     res.send(indexHtml);
   });
 
-  // app.use("/api/v1/user-information", userRouter);
-  // app.use("/api/v1/student", studentRouter);
-  // app.use("/api/v1/lecturer", lecturerRouter);
   app.use("/api/v1/query-selector", queryRouter);
-  // app.use("/api/v1/course", courseRouter);
-  // app.use("/api/v1/question", questionRouter);
-  // app.use("/api/v1/department", departmentRouter);
-  // app.use("/api/v1/lecture", lectureRouter);
-  // app.use("/api/v1/document", documentRouter);
-  // app.use("/api/v1/attempt", attemptRouter);
-  // app.use("/api/v1/ticket", ticketRouter);
-  // app.use("/api/v1/quiz", quizRouter);
-
   // start server 
   app.listen(PORT);
 }
