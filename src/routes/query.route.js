@@ -6,8 +6,8 @@ import {
     // updateAdminById
 } from "../controllers/query.controller.js";
 
-const queryRouter = Router();
+const router = Router();
 
-queryRouter.post("/query-selector", queryDatabase);
+router.post("/query-selector", queryDatabase);
 
-export default queryRouter;
+export default router;
