@@ -8,6 +8,6 @@ import {
 
 const queryRouter = Router();
 
-queryRouter.post("", queryDatabase);
+queryRouter.post("/query-selector", queryDatabase);
 
 export default queryRouter;

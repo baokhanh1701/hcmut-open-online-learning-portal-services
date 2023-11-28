@@ -29,8 +29,7 @@ async function main() {
     );
     res.send(indexHtml);
   });
-
-  app.use("/api/v1/query-selector", queryRouter);
+  app.use("/api/v1", queryRouter);
   // start server 
   app.listen(PORT);
 }
