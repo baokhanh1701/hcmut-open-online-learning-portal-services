@@ -5,7 +5,7 @@ config();
 export const queryDatabase = async (req, res) => {
     const { Pool } = pkg;
     const pool = new Pool({
-        connectionString: 'postgresql://knguyenkieubao:0nV1SrXbdsLx@ep-blue-grass-95062190-pooler.ap-southeast-1.aws.neon.tech/hoolp_db?sslmode=require'
+        connectionString: 'postgresql://knguyenkieubao:0nV1SrXbdsLx@ep-blue-grass-95062190-pooler.ap-southeast-1.aws.neon.tech/staging_env_db?sslmode=require'
     });
     const client = await pool.connect();
     try {
