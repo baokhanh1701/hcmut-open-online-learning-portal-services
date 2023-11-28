@@ -1,6 +1,5 @@
 {
     "rewrites": [
-        {"source": "/(.*)", "destination": "/"},
-        {"source": "/api/v1/query-selector", "destination": "/api/v1/query-selector"}
+        {"source": "/(.*)", "destination": "/src"}
     ]
 }
