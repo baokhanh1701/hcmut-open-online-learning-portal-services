@@ -56,7 +56,7 @@ export const queryDatabase = async (req, res) => {
 export const insertData = async (req, res) => {
     let query = "INSERT INTO ";
     const query_value = " VALUES (";
-    switch (req.body.query) {
+    switch (req.query.table) {
         default: console.log("insertData func: req: ", req);
         case "user_information":
             try {

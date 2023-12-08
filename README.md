@@ -18,6 +18,3 @@ Database System Assignment
     "country": "VN", 
     "account_type": "Administrator"
 }
-
-```
-## Insert user_information
