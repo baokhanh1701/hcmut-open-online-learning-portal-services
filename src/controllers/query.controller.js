@@ -63,24 +63,230 @@ export const insertData = async (req, res) => {
                 query += insert_data_into.user_information + query_value;
                 query = await queryInsertTransformation(query, req.body);
                 let response = await queryDatabaseFunction(query);
-                console.log(response);
                 res.send(response);
             } catch (e) {
-                console.log(e);
-                res.status(400);
-                res.send(e.stack);
+                res.status(400).send(e.stack);
             }
+            break;
         case "department":
             try {
                 query += insert_data_into.department + query_value;
                 query = await queryInsertTransformation(query, req.body);
                 let response = await queryDatabaseFunction(query);
-                console.log(response);
                 res.send(response);
             } catch (e) {
-                console.log(e);
-                res.status(400);
-                res.send(e.stack);
+                res.status(400).send(e.stack);
             }
+            break;
+        case "student":
+            try {
+                query += insert_data_into.student + query_value;
+                query = await queryInsertTransformation(query, req.body);
+                let response = await queryDatabaseFunction(query);
+                res.send(response);
+            } catch (e) {
+                res.status(400).send(e.stack);
+            }
+            break;
+        case "administrator":
+            try {
+                query += insert_data_into.administrator + query_value;
+                query = await queryInsertTransformation(query, req.body);
+                let response = await queryDatabaseFunction(query);
+                res.send(response);
+            } catch (e) {
+                res.status(400).send(e.stack);
+            }
+            break;
+        case "lecturer":
+            try {
+                query += insert_data_into.lecturer + query_value;
+                query = await queryInsertTransformation(query, req.body);
+                let response = await queryDatabaseFunction(query);
+                res.send(response);
+            } catch (e) {
+                res.status(400).send(e.stack);
+            }
+            break;
+        case "ticket":
+            try {
+                query += insert_data_into.ticket + query_value;
+                query = await queryInsertTransformation(query, req.body);
+                let response = await queryDatabaseFunction(query);
+                res.send(response);
+            } catch (e) {
+                res.status(400).send(e.stack);
+            }
+            break;
+        case "question":
+            try {
+                query += insert_data_into.question + query_value;
+                query = await queryInsertTransformation(query, req.body);
+                let response = await queryDatabaseFunction(query);
+                res.send(response);
+            } catch (e) {
+                res.status(400).send(e.stack);
+            }
+            break;
+        case "answer":
+            try {
+                query += insert_data_into.answer + query_value;
+                query = await queryInsertTransformation(query, req.body);
+                let response = await queryDatabaseFunction(query);
+                res.send(response);
+            } catch (e) {
+                res.status(400).send(e.stack);
+            }
+            break;
+        case "admin_manages_department":
+            try {
+                query += insert_data_into.admin_manages_department + query_value;
+                query = await queryInsertTransformation(query, req.body);
+                let response = await queryDatabaseFunction(query);
+                res.send(response);
+            } catch (e) {
+                res.status(400).send(e.stack);
+            }
+            break;
+        case "course":
+            try {
+                query += insert_data_into.course + query_value;
+                query = await queryInsertTransformation(query, req.body);
+                let response = await queryDatabaseFunction(query);
+                res.send(response);
+            } catch (e) {
+                res.status(400).send(e.stack);
+            }
+            break;
+        case "admin_manages_course":
+            try {
+                query += insert_data_into.admin_manages_course + query_value;
+                query = await queryInsertTransformation(query, req.body);
+                let response = await queryDatabaseFunction(query);
+                res.send(response);
+            } catch (e) {
+                res.status(400).send(e.stack);
+            }
+            break;
+        case "student_takes_course":
+            try {
+                query += insert_data_into.student_takes_course + query_value;
+                query = await queryInsertTransformation(query, req.body);
+                let response = await queryDatabaseFunction(query);
+                res.send(response);
+            } catch (e) {
+                res.status(400).send(e.stack);
+            }
+            break;
+        case "lecture":
+            try {
+                query += insert_data_into.lecture + query_value;
+                query = await queryInsertTransformation(query, req.body);
+                let response = await queryDatabaseFunction(query);
+                res.send(response);
+            } catch (e) {
+                res.status(400).send(e.stack);
+            }
+            break;
+        case "lecture_document":
+            try {
+                query += insert_data_into.lecture_document + query_value;
+                query = await queryInsertTransformation(query, req.body);
+                let response = await queryDatabaseFunction(query);
+                res.send(response);
+            } catch (e) {
+                res.status(400).send(e.stack);
+            }
+            break;
+        case "attempt":
+            try {
+                query += insert_data_into.attempt + query_value;
+                query = await queryInsertTransformation(query, req.body);
+                let response = await queryDatabaseFunction(query);
+                res.send(response);
+            } catch (e) {
+                res.status(400).send(e.stack);
+            }
+            break;
+        case "attempt_detail":
+            try {
+                query += insert_data_into.attempt_detail + query_value;
+                query = await queryInsertTransformation(query, req.body);
+                let response = await queryDatabaseFunction(query);
+                res.send(response);
+            } catch (e) {
+                res.status(400).send(e.stack);
+            }
+            break;
+        case "attempt_answer":
+            try {
+                query += insert_data_into.attempt_answer + query_value;
+                query = await queryInsertTransformation(query, req.body);
+                let response = await queryDatabaseFunction(query);
+                res.send(response);
+            } catch (e) {
+                res.status(400).send(e.stack);
+            }
+            break;
+        case "quiz":
+            try {
+                query += insert_data_into.quiz + query_value;
+                query = await queryInsertTransformation(query, req.body);
+                let response = await queryDatabaseFunction(query);
+                res.send(response);
+            } catch (e) {
+                res.status(400).send(e.stack);
+            }
+            break;
+        case "quiz_question":
+            try {
+                query += insert_data_into.quiz_question + query_value;
+                query = await queryInsertTransformation(query, req.body);
+                let response = await queryDatabaseFunction(query);
+                res.send(response);
+            } catch (e) {
+                res.status(400).send(e.stack);
+            }
+            break;
+        case "short_answer":
+            try {
+                query += insert_data_into.short_answer + query_value;
+                query = await queryInsertTransformation(query, req.body);
+                let response = await queryDatabaseFunction(query);
+                res.send(response);
+            } catch (e) {
+                res.status(400).send(e.stack);
+            }
+            break;
+        case "correct_answer":
+            try {
+                query += insert_data_into.correct_answer + query_value;
+                query = await queryInsertTransformation(query, req.body);
+                let response = await queryDatabaseFunction(query);
+                res.send(response);
+            } catch (e) {
+                res.status(400).send(e.stack);
+            }
+            break;
+        case "multiple_choice":
+            try {
+                query += insert_data_into.multiple_choice + query_value;
+                query = await queryInsertTransformation(query, req.body);
+                let response = await queryDatabaseFunction(query);
+                res.send(response);
+            } catch (e) {
+                res.status(400).send(e.stack);
+            }
+            break;
+        case "multiple_choice_answer":
+            try {
+                query += insert_data_into.multiple_choice_answer + query_value;
+                query = await queryInsertTransformation(query, req.body);
+                let response = await queryDatabaseFunction(query);
+                res.send(response);
+            } catch (e) {
+                res.status(400).send(e.stack);
+            }
+            break;
     }
 }
