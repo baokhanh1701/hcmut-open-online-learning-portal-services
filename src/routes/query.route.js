@@ -1,13 +1,15 @@
 import { Router } from "express";
 import {
-    queryDatabase
+    queryDatabase,
     // createAdmin,
     // getAdminById,
-    // updateAdminById
+    // updateAdminById,
+    insertData
 } from "../controllers/query.controller.js";
 
 const router = Router();
 
 router.post("/query-selector", queryDatabase);
+router.post("/insert-data", insertData);
 
 export default router;
