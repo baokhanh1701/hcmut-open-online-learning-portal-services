@@ -289,6 +289,30 @@ export const insertData = async (req, res) => {
             }
             break;
     }
+};
+
+export const updateData = async (req, res) => {
+    let query = "UPDATE " + req.query.table;
+    try {
+        let query_set = " SET " + req.body.update;
+        let query_condition = " WHERE " + req.body.condition;
+        query += query_set + query_condition;
+        let response = await queryDatabaseFunction(query);
+        res.send(response)
+    } catch (error) {
+        res.status(400).send(e.stack);
+    }
 }
+
+export const deleteData = async (req, res) => {
+    let query = "DELETE FROM " + req.query.table;
+    try {
+        query += " WHERE " + req.body.condition;
+        let response = await queryDatabaseFunction(query);
+        res.send(response);
+    } catch (e) {
+        res.status(400).send(e.stack);
+    }
+};
 
 
