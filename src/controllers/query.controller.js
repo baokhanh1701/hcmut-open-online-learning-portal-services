@@ -315,4 +315,12 @@ export const deleteData = async (req, res) => {
     }
 };
 
-
+export const dropTable = async (req, res) => {
+    let query = "DROP TABLE " + req.query.table;
+    try {
+        let response = await queryDatabaseFunction(query);
+        res.send(response);
+    } catch (error) {
+        res.status(400).send(e.stack);
+    } 
+}
